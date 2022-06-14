@@ -1,0 +1,233 @@
+:root {
+    --big-theme: 800;
+    --main-text: 600;
+    --select-text: 400;
+
+}
+
+/* nunito-sans-300 - latin_cyrillic */
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/nunito-sans-v12-latin_cyrillic-300.woff2") format("woff2"),
+        url("../fonts/nunito-sans-v12-latin_cyrillic-300.woff") format("woff");
+}
+
+/* nunito-sans-regular - latin_cyrillic */
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/nunito-sans-v12-latin_cyrillic-regular.woff2") format("woff2"),
+        url("../fonts/nunito-sans-v12-latin_cyrillic-regular.woff") format("woff");
+}
+
+/* nunito-sans-600 - latin_cyrillic */
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/nunito-sans-v12-latin_cyrillic-600.woff2") format("woff2"),
+        url("../fonts/nunito-sans-v12-latin_cyrillic-600.woff") format("woff");
+}
+
+/* nunito-sans-800 - latin_cyrillic */
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/nunito-sans-v12-latin_cyrillic-800.woff2") format("woff2"),
+        url("../fonts/nunito-sans-v12-latin_cyrillic-800.woff") format("woff");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+section {
+    background-color: #FAFAFA;
+    padding-top: 48px;
+    padding-bottom: 45px;
+}
+
+.container {
+    max-width: 1340px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+header {
+    background-color: #fff;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.header-start {
+    padding-top: 23px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo {
+    margin: 0;
+    font-weight: var(--big-theme);
+    font-size: 24px;
+    line-height: 33px;
+    color: #111517;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    font-weight: var(--main-text);
+    font-size: 16px;
+    line-height: 22px;
+    color: #111517;
+
+}
+
+.nav-link::before {
+    margin-right: 11px;
+    content: "";
+    background-image: url(../images/Path.svg);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    display: block;
+    /* position: absolute; */
+    align-items: center;
+
+}
+
+.search-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.search {
+    padding-left: 60px;
+    width: 480px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-image: url(../images/search-icon.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    background-position: calc(50% - 200px) calc(50%);
+    border: none;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+    border-radius: 5px;
+}
+
+.search::placeholder {
+    /* padding-left: 10px; */
+    margin-left: 20px;
+}
+
+select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    appearance: none;
+    width: 200px;
+    padding-top: 18px;
+    padding-right: 20px;
+    padding-left: 24px;
+    padding-bottom: 18px;
+    background-image: url(../images/strelka.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 80px) calc(50%);
+    font-weight: var(--select-text);
+    font-size: 14px;
+    line-height: 20px;
+    color: #111517;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+    border-radius: 5px;
+}
+
+select>option::placeholder {
+    padding: 10px;
+    margin: 10px;
+}
+
+.countries-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.countries-list-item {
+    margin-right: 71px;
+    margin-bottom: 75px;
+    width: 264px;
+    list-style: none;
+    background-color: #fff;
+}
+
+.countries-list-item:nth-child(4) {
+    margin-right: 0;
+}
+
+.countries-list-item:nth-child(8) {
+    margin-right: 0;
+}
+.countries-list-item:nth-child(5) {
+    margin-bottom: 0;
+}
+.countries-list-item:nth-child(6) {
+    margin-bottom: 0;
+}
+.countries-list-item:nth-child(7) {
+    margin-bottom: 0;
+}
+.countries-list-item:nth-child(8) {
+    margin-bottom: 0;
+}
+
+.flag-info {
+    padding-top: 24px;
+    /* padding-right: 90px; */
+    padding-bottom: 46px;
+    padding-left: 24px;
+}
+
+.names {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: var(--big-theme);
+    font-size: 18px;
+    line-height: 26px;
+    color: #111517;
+}
+
+.info-static {
+    margin: 0;
+    margin-bottom: 8px;
+}
