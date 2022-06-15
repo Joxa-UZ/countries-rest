@@ -177,7 +177,9 @@ select>option::placeholder {
 }
 
 .countries-list {
+    margin: 0;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 0;
@@ -186,9 +188,11 @@ select>option::placeholder {
 .countries-list-item {
     margin-right: 71px;
     margin-bottom: 75px;
-    width: 264px;
+    width: 268px;
     list-style: none;
     background-color: #fff;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+    border-radius: 5px;
 }
 
 .countries-list-item:nth-child(4) {
@@ -198,17 +202,25 @@ select>option::placeholder {
 .countries-list-item:nth-child(8) {
     margin-right: 0;
 }
+
 .countries-list-item:nth-child(5) {
     margin-bottom: 0;
 }
+
 .countries-list-item:nth-child(6) {
     margin-bottom: 0;
 }
+
 .countries-list-item:nth-child(7) {
     margin-bottom: 0;
 }
+
 .countries-list-item:nth-child(8) {
     margin-bottom: 0;
+}
+
+.item-image {
+    display: block;
 }
 
 .flag-info {
